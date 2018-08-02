@@ -72,13 +72,28 @@
                                             <constraint firstAttribute="bottom" secondItem="rAu-6H-vnv" secondAttribute="bottom" constant="100" id="wXf-97-Wfu"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-94-xzi">
+                                        <rect key="frame" x="87.5" y="316.5" width="199" height="40"/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.66666666669999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Wgn-NZ-ZOw"/>
+                                        </constraints>
+                                        <state key="normal" title="跳转到更详细的阴影学习界面">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5Gs-rp-50f" kind="show" id="Bgy-Ca-vJc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.74509803919999995" green="0.74901960779999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="fLB-94-xzi" firstAttribute="centerX" secondItem="O3o-1L-wN1" secondAttribute="centerX" id="Brc-sW-Zed"/>
                                     <constraint firstItem="Tfi-OT-jUM" firstAttribute="centerX" secondItem="O3o-1L-wN1" secondAttribute="centerX" id="GWF-Mm-1ni"/>
                                     <constraint firstItem="Tfi-OT-jUM" firstAttribute="centerY" secondItem="O3o-1L-wN1" secondAttribute="centerY" multiplier="1.5" id="Hqg-dj-BKf"/>
                                     <constraint firstItem="ebk-PO-ebR" firstAttribute="centerY" secondItem="O3o-1L-wN1" secondAttribute="centerY" multiplier="0.5" id="JPG-h0-PI5"/>
                                     <constraint firstItem="ebk-PO-ebR" firstAttribute="centerX" secondItem="O3o-1L-wN1" secondAttribute="centerX" id="bbZ-4b-h1Z"/>
+                                    <constraint firstItem="fLB-94-xzi" firstAttribute="centerY" secondItem="O3o-1L-wN1" secondAttribute="centerY" multiplier="1.04" id="o14-3V-VNA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -99,6 +114,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-297" y="173"/>
+        </scene>
+        <!--Senior Shadow View Controller-->
+        <scene sceneID="nkp-xh-jNA">
+            <objects>
+                <viewController id="5Gs-rp-50f" customClass="SeniorShadowViewController" customModule="CornerRadius" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D9X-6v-jqv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZP-Wz-9zQ">
+                                <rect key="frame" x="62" y="47" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="p4t-Ho-g25"/>
+                                    <constraint firstAttribute="height" constant="250" id="ydF-Hs-8R0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-Rb-LPI">
+                                <rect key="frame" x="62.5" y="390.5" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="PVH-BU-Npe"/>
+                                    <constraint firstAttribute="width" constant="250" id="khp-ah-nK3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74509803919999995" green="0.74901960779999999" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ZP-Wz-9zQ" firstAttribute="centerY" secondItem="lnY-PL-AEv" secondAttribute="centerY" multiplier="0.5" id="GhE-oE-fi6"/>
+                            <constraint firstItem="5ZH-Rb-LPI" firstAttribute="centerX" secondItem="lnY-PL-AEv" secondAttribute="centerX" id="Izl-Ho-fzF"/>
+                            <constraint firstItem="3ZP-Wz-9zQ" firstAttribute="centerX" secondItem="lnY-PL-AEv" secondAttribute="centerX" id="Mco-mZ-5HE"/>
+                            <constraint firstItem="5ZH-Rb-LPI" firstAttribute="centerY" secondItem="lnY-PL-AEv" secondAttribute="centerY" multiplier="1.5" id="rgW-v6-g5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lnY-PL-AEv"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="5ZH-Rb-LPI" id="uIL-3W-EfW"/>
+                        <outlet property="topView" destination="3ZP-Wz-9zQ" id="qjd-VP-ddI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yz8-CA-UiD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="174"/>
         </scene>
     </scenes>
 </document>

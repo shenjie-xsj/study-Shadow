@@ -14,6 +14,7 @@
 		0843F7C32112ACD0007FAD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0843F7C12112ACD0007FAD0D /* LaunchScreen.storyboard */; };
 		0843F7CE2112ACD0007FAD0D /* CornerRadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843F7CD2112ACD0007FAD0D /* CornerRadiusTests.swift */; };
 		0843F7D92112ACD0007FAD0D /* CornerRadiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843F7D82112ACD0007FAD0D /* CornerRadiusUITests.swift */; };
+		0843F7E72112ED10007FAD0D /* SeniorShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843F7E62112ED10007FAD0D /* SeniorShadowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0843F7D42112ACD0007FAD0D /* CornerRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0843F7D82112ACD0007FAD0D /* CornerRadiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusUITests.swift; sourceTree = "<group>"; };
 		0843F7DA2112ACD0007FAD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0843F7E62112ED10007FAD0D /* SeniorShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeniorShadowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0843F7BF2112ACD0007FAD0D /* Assets.xcassets */,
 				0843F7C12112ACD0007FAD0D /* LaunchScreen.storyboard */,
 				0843F7C42112ACD0007FAD0D /* Info.plist */,
+				0843F7E62112ED10007FAD0D /* SeniorShadowViewController.swift */,
 			);
 			path = CornerRadius;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				0843F7BB2112ACCE007FAD0D /* ViewController.swift in Sources */,
 				0843F7B92112ACCE007FAD0D /* AppDelegate.swift in Sources */,
+				0843F7E72112ED10007FAD0D /* SeniorShadowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
